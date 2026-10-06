@@ -75,7 +75,7 @@ ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of def
 
 **数据集内容：** 
 
-- 从 Behance 收集 **674 场艺术创作直播**，切分为 **13,303 个视频—文本样本**，包含视频、对应英文 transcript 和摘要标注，**视频总时长约 1,109 小时**。
+- 从 Behance 收集 **628 场艺术创作直播**，切分为 **13,303 个视频—文本样本**，包含视频、对应英文 transcript 和摘要标注，**视频总时长约 1,109 小时**。
 
 - 官方提供[预处理数据的 Google Drive 链接](https://drive.google.com/drive/folders/1rqXEIelRzq4mb7NaBk3GXxh7jlfP_Snm?usp=share_link)，仓库说明包含 `annotation` 与 `feature`。
 - 原始视频的公开 URL 需按仓库说明邮件联系 `bohe@umd.edu` 获取。
@@ -131,7 +131,7 @@ ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of def
 标注方式和内容：
 
 - **标注方式：** 自动获取 YouTube Most Replayed 曲线，将每条视频的 **100 个等比例时间分箱分数**映射到逐秒视觉特征。
-- **标注内容：** 视频元数据。摘要实验以 KTS 划分镜头，再在时长预算下选择片段；**回放热度自动生成summary**。
+- **标注内容：** 视频元数据。摘要实验以 KTS 划分镜头，再在时长预算下选择片段；**回放热度自动生成 summary**。
 
 视频长度和帧率：
 
