@@ -34,7 +34,7 @@ peft==0.17.1
 trl==0.23.1
 numpy==1.26.4
 EOF
-python -m pip install -c constraints-streamo.txt -e . qwen-vl-utils decord==0.6.0 opencv-python-headless==4.11.0.86
+python -m pip install -c constraints-streamo.txt -e . qwen-vl-utils decord==0.6.0 opencv-python-headless==4.11.0.86 msgspec  # msgspec: swift imports it but Streamo does not declare it
 cd ..
 
 # 没有 Streamo checkpoint 时下载公开基线模型
